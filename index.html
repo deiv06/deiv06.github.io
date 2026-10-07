@@ -16,7 +16,7 @@
         <a href="#servicio">Servicio</a>
         <a href="#como">Cómo funciona</a>
         <a href="#faq">Preguntas</a>
-        <a class="nav-cta" href="#contacto" data-abrir-chat>Hablemos</a>
+        <a class="nav-cta" href="#contacto">Hablemos</a>
       </nav>
     </div>
   </header>
@@ -34,10 +34,9 @@
             y te avisa cuando hace falta una persona.
           </p>
           <div class="hero-actions">
-            <a class="btn" href="#contacto" data-abrir-chat>Pruébalo ahora</a>
+            <a class="btn" href="#contacto">Hablemos</a>
             <a class="btn btn-ghost" href="#como">Ver cómo funciona</a>
           </div>
-          <p class="hero-note">El chat de esta web es un asistente como el que tendría tu negocio. Escríbele.</p>
         </div>
 
         <!-- Ejemplo ilustrativo de conversación -->
@@ -199,7 +198,7 @@
         </details>
         <details>
           <summary>¿Y si el asistente no sabe responder algo?</summary>
-          <p>Te avisa al momento y te pasa la conversación. Puedes contestar tú desde el panel y el asistente se queda en pausa en ese chat.</p>
+          <p>Te avisa al momento con lo que necesita el cliente y su contacto, para que sigas tú la conversación.</p>
         </details>
         <details>
           <summary>¿Mis clientes sabrán que es un asistente automático?</summary>
@@ -222,10 +221,10 @@
         <h2>¿Lo vemos para tu negocio?</h2>
         <p class="section-lead">Escríbeme y te explico cómo encajaría, sin compromiso. Respondo lo antes posible.</p>
         <div class="contact-actions">
-          <a class="btn btn-light" href="#contacto" data-abrir-chat>Hablar con el asistente</a>
-          <a class="btn btn-outline-light" href="https://wa.me/34641651350" rel="noopener">WhatsApp 641 651 350</a>
+          <a class="btn btn-light" href="https://wa.me/34641651350" rel="noopener">WhatsApp 641 651 350</a>
+          <a class="btn btn-outline-light" href="mailto:david1006mp@gmail.com">Escríbeme un correo</a>
         </div>
-        <p class="contact-mail">O por correo: <a href="mailto:david1006mp@gmail.com">david1006mp@gmail.com</a></p>
+        <p class="contact-mail">david1006mp@gmail.com</p>
       </div>
     </section>
   </main>
@@ -239,25 +238,5 @@
       </span>
     </div>
   </footer>
-
-  <script src="https://forja-starter-9a8987.david1006mp.workers.dev/widget.js"
-          data-tema="suave"
-          data-color="#1f7a5a"
-          data-saludo="¡Hola! 👋 ¿Quieres que tu negocio responda solo a tus clientes y gestione citas? Cuéntame qué negocio tienes."></script>
-  <script>
-    // Los botones con data-abrir-chat abren el chat. Si el chat no ha cargado,
-    // siguen su enlace normal (bajan a Contacto).
-    document.querySelectorAll("[data-abrir-chat]").forEach(function (el) {
-      el.addEventListener("click", function (e) {
-        var host = document.querySelector("[data-forja-widget]");
-        var raiz = host && host.shadowRoot;
-        var burbuja = raiz && raiz.querySelector(".burbuja");
-        if (!burbuja) return;
-        e.preventDefault();
-        var abierto = raiz.querySelector(".abierto");
-        if (!abierto) burbuja.click();
-      });
-    });
-  </script>
 </body>
 </html>
