@@ -115,6 +115,8 @@ header.site nav a.nav-cta:hover { background: var(--accent-strong); }
 .guarantee { margin: 18px 0 0; padding: 10px 14px; border-radius: 12px; max-width: 54ch; font-size: 0.97rem;
   background: var(--accent-soft); color: var(--text); border: 1px solid color-mix(in srgb, var(--accent) 30%, var(--border)); }
 .guarantee strong { color: var(--accent); }
+.webs-note { margin: 22px auto 0; text-align: center; }
+.webs-cta { margin: 18px 0 0; text-align: center; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
 .hero-note { margin: 18px 0 0; font-size: 0.92rem; color: var(--muted); }
 
